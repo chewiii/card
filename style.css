@@ -1,0 +1,96 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    -webkit-font-smoothing : none;
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #f0f4fb;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Apply styles to the card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+/* Style the individual cards */
+.card {
+    box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.842);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    background: #22447bcd;
+    background-image: url(border1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+
+.card:hover {
+    transform: scale(1.05); /* Add a zoom effect on hover */
+}
+
+/* Style the card image */
+.card img{
+    padding: 30px;
+    margin-left: 35px;
+    margin-right: 35px;
+    max-width: 120px;
+    height: auto;
+}
+/* Style the card content */
+.card-content{
+    padding: 10px;
+    visibility: hidden;
+}
+.card:hover .card-content{
+    visibility: visible;
+    
+}
+.card h2 {
+
+    font-size: 8px;
+    visibility: visible;
+
+}
+
+.card p {
+    margin-left: 10px;
+    display: flex;
+    font-size: 7px;
+    color: #adadad;
+    text-align: left;
+}
+
+/* Style the "Learn More" link */
+.learn-more {
+    font-size: 6px;
+    display: inline-block;
+    background-color: #9f3d00bd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.learn-more:hover {
+    background-color: #000000; /* Change the background color on hover */
+}
